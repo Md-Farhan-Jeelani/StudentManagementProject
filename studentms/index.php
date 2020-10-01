@@ -34,7 +34,7 @@
 </tr>
 
 <tr>
-<td colspan="2" align="center"><input type="submit" name="submit" value="Show Info"></td>
+<td colspan="5" align="right"><input type="submit" name="send" value="Show Info"></td>
 </tr>
 
 </table>
@@ -45,11 +45,11 @@
 
 <?php
 include('dbcon.php');
-include('function.php');
+include('backend.php');
 
 if(isset($_POST['submit'])) {
 	
-	$standard= $_POST['std'];
+	$standard= $_POST['student'];
 	$rollno= $_POST['rollno'];
 	
 	showdetails($standard,$rollno);
